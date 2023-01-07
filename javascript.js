@@ -71,4 +71,7 @@ function game(){
     console.log("Computer Wins: " + ComputerWins);
 }
 
+console.log("Rock Paper Scissors!!!")
+console.log("")
+
 game();
