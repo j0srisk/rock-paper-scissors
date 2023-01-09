@@ -45,10 +45,16 @@ h3 {
     height: 160px;
     width: 160px;
     border-radius: 16px;
+    transition: .2s ease-in-out;
+}
+
+.btn:hover {
+    scale: 1.1;
 }
 
 .emoji {
     font-size: 80px;
+    user-select: none;
 }
 
 .scoreboard {
