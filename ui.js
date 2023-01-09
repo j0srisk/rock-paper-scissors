@@ -17,9 +17,10 @@ const paperBtn = document.getElementById('paperBtn');
 const scissorsBtn = document.getElementById('scissorsBtn');
 const playerEmoji = document.getElementById('playerEmoji');
 const computerEmoji = document.getElementById('computerEmoji');
+const score = document.getElementById('score');
 
-const playerScoreText = document.getElementById('playerScore');
-const computerScoreText = document.getElementById('computerScore');
+// const playerScoreText = document.getElementById('playerScore');
+// const computerScoreText = document.getElementById('computerScore');
 
 const scoreTitle = document.getElementById('score-title');
 const scoreSubTitle = document.getElementById('score-subtitle');
@@ -93,8 +94,9 @@ function playRound(playerChoice, computerChoice){
 }
 
 function updateText() {
-    playerScoreText.textContent = `Player: ${playerScore}`;
-    computerScoreText.textContent = `Computer: ${computerScore}`;
+    // playerScoreText.textContent = `Player: ${playerScore}`;
+    // computerScoreText.textContent = `Computer: ${computerScore}`;
+    score.textContent = `${playerScore} - ${computerScore}`
 
     if (playerScore === 5) {
         scoreTitle.textContent = 'Congratulations';

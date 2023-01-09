@@ -7,45 +7,49 @@
     <title>Rock Paper Scissors</title>
     <script src="ui.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/cowboy-hat-face_1f920.png">
+    <link rel="icon" href="./images/cowboy.png">
 </head>
 <body>
     <div class="header">
-        <h1>Rock Paper Scissors</h1>
+        <div class="left">
+            <h1>Rock Paper Scissors</h1>
+        </div>
+        <div class="right">
+
+        </div>
     </div>
     <div class="main">
-        <div class="scoreboard">
-            <h2 id="score-title">Pick your weapon</h2>
-            <h3 id="score-subtitle">First to 5 wins!</h3>
-            <div class="game">
-                <div class="score-box">
-                    <div class="emoji" id="playerEmoji">
-                        ❓
-                    </div>
-                    <h3 id="playerScore">Player: 0</h3>
+        <div class="buttons">
+            <div class="triangle-top">
+                <div class="btn" id="rockBtn">
+                    <img src="./images/rock.png">
                 </div>
-                <div class="score-box">
-                    <div class="emoji" id="computerEmoji">
-                        ❓
-                    </div>
-                    <h3 id ="computerScore">Computer: 0</h3>
+                <div class="btn" id="paperBtn">
+                    <img src="./images/paper.png">
+                </div>
+            </div>
+            <div class="triangle-bottom">
+                <div class="btn" id="scissorsBtn">
+                    <img src="./images/scissors.png">
                 </div>
             </div>
         </div>
-        <div class="buttons">
-            <div class="btn" id="rockBtn">
-                <div class="emoji">
-                    🪨
+        <div class="scoreboard">
+            <div class="score-box">
+                <h3>Player</h3>
+                <div class="emoji" id="playerEmoji">
+                    ❓
                 </div>
             </div>
-            <div class="btn" id="paperBtn">
-                <div class="emoji">
-                    📄
-                </div>
+            <div class="score">
+                <h2 id="score-title">Pick your weapon</h2>
+                <h3 id="score-subtitle">First to 5 wins!</h3>
+                <h2 id="score">0 - 0</h2>
             </div>
-            <div class="btn" id="scissorsBtn">
-                <div class="emoji">
-                    ✂️
+            <div class="score-box">
+                <h3>Computer</h3>
+                <div class="emoji" id="computerEmoji">
+                    ❓
                 </div>
             </div>
         </div>
